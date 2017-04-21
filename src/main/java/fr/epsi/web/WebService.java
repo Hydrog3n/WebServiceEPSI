@@ -20,7 +20,10 @@ public class WebService {
 	@ResponseBody
 	public List<Concert> listerConcert(){
 		System.out.println("méthode: listerConcert");
-		return new ArrayList<Concert>();
+		ArrayList<Concert> concerts = new ArrayList<Concert>();
+		Concert concert = new Concert("Bruno Mars", "Paris");
+		concerts.add(concert);
+		return concerts;
 	}
 	
 	@RequestMapping(method=RequestMethod.POST, value="/concert/{idConcert}")
