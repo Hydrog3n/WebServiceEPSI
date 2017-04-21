@@ -21,7 +21,7 @@ public class WebService {
 	public List<Concert> listerConcert(){
 		System.out.println("méthode: listerConcert");
 		ArrayList<Concert> concerts = new ArrayList<Concert>();
-		Concert concert = new Concert("Bruno Mars", "Paris");
+		Concert concert = new Concert(10, "Bruno Mars", "Paris");
 		concerts.add(concert);
 		return concerts;
 	}
@@ -29,7 +29,7 @@ public class WebService {
 	@RequestMapping(method=RequestMethod.POST, value="/concert/{idConcert}")
 	@ResponseBody
 	public int choisirPlace(@PathVariable(name="idConcert") int id, @RequestBody Reservation reservation){
-		System.out.println("méthode: choisirPlace, concert: " + id + ", reservation: " + reservation);
+		System.out.println("methode: choisirPlace, concert: " + id + ", reservation: " + reservation);
 		return 0;
 	}
 
