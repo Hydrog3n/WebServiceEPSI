@@ -8,8 +8,9 @@ Tester le Web Service :
 - lancer le projet (run as -> java application) du main : fr.epsi.WebServiceEpsiApplication
 - ouvrir un nagigateur et aller à : http://localhost:8080/concert
 
-A faire (1 choix parmi) :
+Travail à faire pour la validation/évaluaion du cours Web Services (1 choix parmi) :
 
+- travail en binôme
 - Continuer à développer le  Web Service (voir le doc TD conception Web Service Rest -gestion concert (niveau prog : assez élévé)
 - Développer l'interface Web du présent Web Service en Angular (version 1 recommandée sur vous ne connaissez pas) (niveau prog moyen)
 https://angularjs.org/
