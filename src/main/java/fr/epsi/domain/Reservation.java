@@ -1,36 +1,41 @@
 package fr.epsi.domain;
 
 public class Reservation {
-	
-	int idConcert;
-	int nbPlaces;
-	
-	public Reservation() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 
-	public Reservation(int idConcert, int nbPlaces) {
-		super();
-		this.idConcert = idConcert;
-		this.nbPlaces = nbPlaces;
-	}
+    private int nbPlace;
+    private String nom;
+    private int id;
 
-	public int getIdConcert() {
-		return idConcert;
-	}
-	
-	public void setIdConcert(int idConcert) {
-		this.idConcert = idConcert;
-	}
-	
-	public int getNbPlaces() {
-		return nbPlaces;
-	}
-	
-	public void setNbPlaces(int nbPlaces) {
-		this.nbPlaces = nbPlaces;
-	}
-	
-	
+    public Reservation(int nbPlace, String nom) {
+        this.setNbPlace(nbPlace);
+        this.setNom(nom);
+    }
+
+    public Reservation() {
+
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getNbPlace() {
+        return nbPlace;
+    }
+
+    public void setNbPlace(int nbPlace) {
+        this.nbPlace = nbPlace;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getNom() {
+        return nom;
+    }
 }
