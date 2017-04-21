@@ -4,7 +4,7 @@ Tester le Web Service :
 - récupérer et décompresser la projet (zip)
 - dans le dossier du projet faire 'gradlew build' si vous n'avez pas Gragle ou 'gradle build' sinon
 - dans le dossier du projet faire 'gradlew eclipse' si vous n'avez pas Gragle ou 'gradle eclipse' sinon
-- importer le projet dans Eclipse
+- importer le projet dans Eclipse (File -> Import -> Existing project into workspace...)
 - lancer le projet (run as -> java application) du main : fr.epsi.WebServiceEpsiApplication
 - ouvrir un nagigateur et aller à : http://localhost:8080/concert
 
