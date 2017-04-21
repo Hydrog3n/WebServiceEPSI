@@ -19,7 +19,7 @@ public class WebService {
 	@RequestMapping(method=RequestMethod.GET, value="/concert")
 	@ResponseBody
 	public List<Concert> listerConcert(){
-		System.out.println("méthode: listerConcert");
+		System.out.println("methode: listerConcert");
 		ArrayList<Concert> concerts = new ArrayList<Concert>();
 		Concert concert = new Concert(10, "Bruno Mars", "Paris");
 		concerts.add(concert);
