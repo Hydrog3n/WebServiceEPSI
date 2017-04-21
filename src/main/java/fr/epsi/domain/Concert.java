@@ -2,6 +2,7 @@ package fr.epsi.domain;
 
 public class Concert {
 	
+	int id;
 	String artiste;
 	String lieu;
 	
@@ -10,8 +11,9 @@ public class Concert {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Concert(String artiste, String lieu) {
+	public Concert(int id, String artiste, String lieu) {
 		super();
+		this.id = id;
 		this.artiste = artiste;
 		this.lieu = lieu;
 	}
@@ -30,6 +32,14 @@ public class Concert {
 
 	public void setLieu(String lieu) {
 		this.lieu = lieu;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 }
